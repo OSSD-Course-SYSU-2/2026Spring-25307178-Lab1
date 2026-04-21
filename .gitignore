@@ -1,2 +1,13 @@
-__pycache__/
+.hvigor/
+.idea/
+build/
+entry/build/
+oh_modules/
+entry/oh_modules/
+node_modules/
+local.properties
+*.hap
+*.hsp
+*.har
 *.py[cod]
+__pycache__/

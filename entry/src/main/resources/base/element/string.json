@@ -1,0 +1,16 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "Stdio Sorter module"
+    },
+    {
+      "name": "entry_ability_desc",
+      "value": "Main ability"
+    },
+    {
+      "name": "entry_ability_label",
+      "value": "Stdio Sorter"
+    }
+  ]
+}

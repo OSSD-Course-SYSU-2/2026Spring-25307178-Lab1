@@ -1,33 +1,37 @@
-# Updated OSS Contribution Plan
+# Stdio Sorter
 
-Compared with my initial plan, I now want to start from documentation updates,
-small automation scripts, and beginner-friendly bug fixes so that I can build a
-stronger understanding of collaboration before attempting larger feature work.
+This repository contains a DevEco Studio HarmonyOS app written with ArkTS.
 
-## Sorting Utility
+The app demonstrates a simple standard-input / standard-output style workflow:
+users enter numbers, tap the sort button, and read the sorted output on screen.
 
-This repository also includes a small Python sorting program in `sorting.py`.
+## Features
 
-Run the demo:
+- HarmonyOS Stage model project.
+- ArkTS UI implemented in `entry/src/main/ets/pages/Index.ets`.
+- Merge sort implementation without calling a built-in sort helper.
+- Supports numbers separated by spaces, commas, or new lines.
+
+## Command Line Tools
+
+This machine has DevEco Studio command line tools configured:
 
 ```bash
-python sorting.py
+ohpm --version
+hvigor --version
+hdc -v
 ```
 
-Sort your own integers:
+## Build
+
+Install project dependencies:
 
 ```bash
-python sorting.py 8 3 5 1 9
+ohpm install
 ```
 
-Or use standard input:
+Build the HAP:
 
 ```bash
-echo 8 3 5 1 9 | python sorting.py
-```
-
-Run the tests:
-
-```bash
-python -m unittest
+hvigor assembleHap
 ```
